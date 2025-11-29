@@ -15,7 +15,7 @@ struct FInputActionConfig
 	UPROPERTY(EditDefaultsOnly)
 	const UInputAction* InputAction {};
 	
-	UPROPERTY(EditDefaultsOnly)
+	UPROPERTY(EditDefaultsOnly, meta=(Categories = "Input"))
 	FGameplayTag GameplayTag = FGameplayTag();
 };
 

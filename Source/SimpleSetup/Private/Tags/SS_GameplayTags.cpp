@@ -12,6 +12,7 @@ namespace SSGameplayTags
 	UE_DEFINE_GAMEPLAY_TAG(Input_Acceleration,								"Input.Acceleration")
 	UE_DEFINE_GAMEPLAY_TAG(Input_Alt,										"Input.Alt")
 	UE_DEFINE_GAMEPLAY_TAG(Input_Jump,										"Input.Jump")
+	UE_DEFINE_GAMEPLAY_TAG(Input_Interaction,								"Input.Interaction")
 	UE_DEFINE_GAMEPLAY_TAG(Input_Slot1,										"Input.Slot1")
 	UE_DEFINE_GAMEPLAY_TAG(Input_Slot2,										"Input.Slot2")
 	UE_DEFINE_GAMEPLAY_TAG(Input_Slot3,										"Input.Slot3")
