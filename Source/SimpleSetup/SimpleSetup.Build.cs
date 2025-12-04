@@ -28,6 +28,7 @@ public class SimpleSetup : ModuleRules
 				"Core",
 				"EnhancedInput",
 				"GameplayTags",
+				"DeveloperSettings"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
