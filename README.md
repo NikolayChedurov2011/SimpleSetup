@@ -15,7 +15,10 @@ git submodule add https://github.com/NikolayChedurov2011/SimpleSetup.git Plugins
 - Add the SimpleSetup plugin as public module in your Build.cs
 - Make sure the SimpleSetup is enabled in Plugin section of your .uproject
 - In the "Project Settings->Engine->Input->Default Input Component Class" switch to SS_InputComponent
-- Inherit your player controller from SS_PlayerController 
+- Save pointer to **USS_InputInstaller** object in your player controller
+- Override the **APlayerController**'s ```virtual void SetupInputComponent() override;```
+- After the **Super** call create new object ```SS_InputInstaller = NewObject<USS_InputInstaller>();```
+- Call ```SS_InputInstaller->SetupInput(this);``` to setup inputs 
 - Implement ISS_InputInterface for your character and, if needed, Ability System Component
 - Implement ISS_InputInterface's functions **Input_Move()**, **Input_Look()**, **Input_AbilityActionPressed()**, **Input_AbilityActionReleased()**, **Input_AbilityActionHeld()**
 
@@ -29,6 +32,8 @@ As input tag was sent to Ability System Component (or whenever you decided), you
 
 ## How to add own Input Actions:
 
+All settings contains in "ProjectSettings->SimpleSetupInputSettings"
+
 If you want to use this system, then you will be need the **GameplayTag** and **InputAction** for that.
 (I already added some **GameplayTags** that can be used into **SimpleSetup->Source->Tag->SS_GameplayTags**)
 
@@ -36,6 +41,3 @@ Inside the SimpleSetup plugin, you'll find the **DA_SS_AbilityActions_InputConfi
 (I guess, that DA_SS_MovementActions is not the best naming as here can be not only movement inputs, but Alt, Esc and etc..)
 
 **Make sure that your the InputAction bind with GameplayTag in DA_SS_InputConfig and added into IMC_SS_ that located in SimpleSetup->Inputs**
-
-- Override **SetupInputComponent()** function with **Super()** in your **PlayerController** or use mine.
-- See the **InputAction** to function bind example in **SS_PlayerController.cpp**
