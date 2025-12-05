@@ -3,6 +3,7 @@
 #include "AbilitySystemComponent.h"
 #include "AbilitySystemInterface.h"
 #include "EnhancedInputSubsystems.h"
+#include "GameFramework/PlayerState.h"
 #include "Components/Input/SS_InputComponent.h"
 #include "Interfaces/SS_InputInterface.h"
 #include "Settings/SS_InputSettings.h"
