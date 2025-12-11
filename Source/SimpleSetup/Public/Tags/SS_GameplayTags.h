@@ -38,6 +38,7 @@ namespace SSGameplayTags
 	SIMPLESETUP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Attribute_Main_MaxMana)
 	
 	SIMPLESETUP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Attribute_Main_MovementSpeed)
+	SIMPLESETUP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Attribute_Main_MovementSpeedMultiplayer)
 	SIMPLESETUP_API UE_DECLARE_GAMEPLAY_TAG_EXTERN(Attribute_Main_MaxMovementSpeed)
 
 	/**** Event Tags ****/

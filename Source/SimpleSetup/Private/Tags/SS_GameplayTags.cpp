@@ -36,6 +36,7 @@ namespace SSGameplayTags
 	UE_DEFINE_GAMEPLAY_TAG(Attribute_Main_MaxMana,							"Attribute.Main.MaxMana")
 	
 	UE_DEFINE_GAMEPLAY_TAG(Attribute_Main_MovementSpeed,					"Attribute.Main.MovementSpeed")
+	UE_DEFINE_GAMEPLAY_TAG(Attribute_Main_MovementSpeedMultiplayer,			"Attribute.Main.MovementSpeedMultiplayer")
 	UE_DEFINE_GAMEPLAY_TAG(Attribute_Main_MaxMovementSpeed,					"Attribute.Main.MaxMovementSpeed")
 
 	/**** Event Tags ****/
